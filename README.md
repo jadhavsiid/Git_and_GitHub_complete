@@ -99,3 +99,11 @@
     - This command will show you the history of your repository. It will show you all the commits that were made to the repository.
     - You can use the **--oneline** flag to show only the commit message.
     - This will make the output more compact and easier to read.
+
+10. **.gitignore**
+     - .gitignore is a file that tells git which files and folders to ignore. It is a way ti prevent git from tracking certain files or folders.
+     - You can create a gitignore file and add list of files and folders to ignore by using the following command:
+
+            node_modules
+            .env
+            .vscode 
