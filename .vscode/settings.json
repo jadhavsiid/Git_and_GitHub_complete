@@ -1,3 +1,6 @@
 {
-    "path-intellisense.showHiddenFiles": true
+    "path-intellisense.showHiddenFiles": true,
+    "gitlens.views.scm.grouped.hiddenViews": {
+        "repositories": false
+    }
 }

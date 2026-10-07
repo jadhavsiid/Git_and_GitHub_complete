@@ -64,6 +64,7 @@
 
 6. **Complete git flow**
     - A complete git flow, along with pushing the code to github looks like this:
+
     ![Git-flow-1](image-1.png)
 
 7. **Stage**
@@ -91,7 +92,6 @@
 
     - **Note** : Git recommends **atomic commits**, which are self-contained units of work. This ensures that each commit focuses on a single change or fix. If an issue arises, you can easily revert that specific commit without affecting other changes, keeping your repository history clean and organized.
 
-
 9. **Logs**
 
                 git log
@@ -106,4 +106,47 @@
 
             node_modules
             .env
-            .vscode 
+            .vscode
+    - Now, when you run the `git status` command, it will not show the `node_modules` and .vscode folders as being tracked by git.
+
+11. **Branches in git**
+     - Branches are a way to work on different versions of a project at the same time.
+     - They allows you to create a separate line of development that can be worked on independently of the main branch.
+     - This can be useful when you want to make changes to a project without affecting the main branch or when you want to work on a new feature or a bug fix.
+
+     ![branching](image-2.png)
+    
+12. **HEAD in git**
+    - The HEAD is a pointer to the current branch that you are working on. It points to the latest commit in the current branch.
+    - When you create a new branch, it is automatically set as the HEAD of that branch.
+    - The default branch used to be **master**, but now it is called **main**. There's nothing special about main, it is just a convention.
+    - To check in which brach you're working on, you can use - `git branch` command.
+
+13. **Creating a new branch**
+    - To create a new branch, you can use the following commands:
+
+                git branch
+                git branch bug-fix
+                git switch bug-fix
+                git log
+                git switch main
+                git switch -c dark-mode
+                git checkout orange-mode
+
+    - Some points to note:
+
+    `git branch` : Lists all the branches in current repo.
+
+    `git branch bug-fix` : Creates a new branch called "bug-fix".
+
+    `git switch bug-fix` : Switches to "bug-fix" branch.
+
+    `git log` : shows commit history for current branch.
+
+    `git switch maim` : This command switches to main branch.
+
+    `git switch -c dark-mode` : This command creates a new branch called "dark-mode", the **-c** flag is used to create a new branch.
+    
+    `git checkout orange-mode` : This command switches to the "orange-mode" branch.
+
+    **Note:** Commit before switching branches.
