@@ -89,6 +89,9 @@
     - You can use this message to remember what changes were made.
     - Missing the **-m** flag will result in an action that opens your default settings editor.
 
+    - **Note** : Git recommends **atomic commits**, which are self-contained units of work. This ensures that each commit focuses on a single change or fix. If an issue arises, you can easily revert that specific commit without affecting other changes, keeping your repository history clean and organized.
+
+
 9. **Logs**
 
                 git log
