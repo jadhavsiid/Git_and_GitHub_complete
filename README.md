@@ -150,3 +150,8 @@
     `git checkout orange-mode` : This command switches to the "orange-mode" branch.
 
     **Note:** Commit before switching branches.
+
+14. **Merging branches**
+
+    **Fast-forward merge:** In this case branch that you're trying to merge is usually ahead and there are no conflicts.
+    
