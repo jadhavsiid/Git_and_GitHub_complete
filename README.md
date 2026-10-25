@@ -143,7 +143,7 @@
 
     `git log` : shows commit history for current branch.
 
-    `git switch maim` : This command switches to main branch.
+    `git switch main` : This command switches to main branch.
 
     `git switch -c dark-mode` : This command creates a new branch called "dark-mode", the **-c** flag is used to create a new branch.
     
