@@ -143,7 +143,7 @@
 
     `git log` : shows commit history for current branch.
 
-    `git switch maim` : This command switches to main branch.
+    `git switch main` : This command switches to main branch.
 
     `git switch -c dark-mode` : This command creates a new branch called "dark-mode", the **-c** flag is used to create a new branch.
     
@@ -152,13 +152,15 @@
     **Note:** Commit before switching branches.
 
 14. **Merging Branches**
+   
+       - **Fast-forward merge** - This one is easy as branch that you're trying to merge is usually ahead and there are no conflicts. When you are done working on a branch, you can merge it back into the main branch. This is done using following command:
 
-      - **Fast Forward Merge** - This one is easy as branch you're trying to merge is usually ahead and there are no conflicts. When you're done working on a branch, you can merge it back to the main branch. This is done using the following command.
+       first switch to the main branch since commits from other branches will be merged to main.
 
-      first go to the main branch if you're not on main branch.
+             git checkout main
 
-               git checkout main
+       then merge changes from the other branch to your main branch
 
-      Then merge changes from that different branch to your main branch.
+             git merge bug-fix
 
-              git merge hero
+       ![Merge](image-3.png)
