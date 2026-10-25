@@ -150,3 +150,15 @@
     `git checkout orange-mode` : This command switches to the "orange-mode" branch.
 
     **Note:** Commit before switching branches.
+
+14. **Merging Branches**
+
+      - **Fast Forward Merge** - This one is easy as branch you're trying to merge is usually ahead and there are no conflicts. When you're done working on a branch, you can merge it back to the main branch. This is done using the following command.
+
+      first go to the main branch if you're not on main branch.
+
+               git checkout main
+
+      Then merge changes from that different branch to your main branch.
+
+              git merge hero
